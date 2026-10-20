@@ -34,8 +34,9 @@ from sklearn.linear_model import Ridge
 from sklearn.neural_network import MLPRegressor
 from sklearn.preprocessing import StandardScaler
 
-from common import (GDD_MAX_DOY, PHASES, bb_features, cutoff_features, load_phenology,
-                    load_weather, out_path, weather_by_year, window)
+from benchmark_paper.common import (GDD_MAX_DOY, PHASES, bb_features, cutoff_features,
+                                    load_phenology, load_weather, out_path,
+                                    weather_by_year, window)
 
 RNG = np.random.default_rng(42)
 N_BOOT = 2000

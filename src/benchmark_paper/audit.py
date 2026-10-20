@@ -1,8 +1,8 @@
 """
-01_audit.py - load, clean and audit the three raw workbooks.
+audit.py - load, clean and audit the three raw workbooks.
 
 Writes:
-  outputs/clean/*.csv            cleaned tables used by 02_benchmark.py
+  data/processed/*.csv           cleaned tables used by benchmark.py
   outputs/audit/data_audit.txt   data facts to put in Chapters 3-4 of the paper
 
 Checks the paper's numbers (Table I, annual means of Table 3.1) against the raw files.
@@ -10,8 +10,9 @@ Checks the paper's numbers (Table I, annual means of Table 3.1) against the raw 
 import numpy as np
 import pandas as pd
 
-from common import (DATA_DIR, METEO_XLSX, PHASES, PHASE_LABELS, load_chemistry,
-                    load_phenology, load_weather, out_path)
+from benchmark_paper.common import (DATA_PROCESSED_DIR, DATA_RAW_DIR, METEO_XLSX,
+                                    PHASES, PHASE_LABELS, load_chemistry,
+                                    load_phenology, load_weather, out_path)
 
 # Table I of the submitted paper: mean, sd (days), n seasons
 PAPER_TABLE_I = {
@@ -71,16 +72,17 @@ def main():
     pheno = load_phenology()
     chem = load_chemistry()
 
-    daily.to_csv(out_path("clean", "daily_weather.csv"), index=False)
-    monthly.to_csv(out_path("clean", "monthly_precip.csv"), index=False)
-    pheno.to_csv(out_path("clean", "phenology.csv"), index=False)
-    chem.to_csv(out_path("clean", "chemistry.csv"), index=False)
+    DATA_PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+    daily.to_csv(DATA_PROCESSED_DIR / "daily_weather.csv", index=False)
+    monthly.to_csv(DATA_PROCESSED_DIR / "monthly_precip.csv", index=False)
+    pheno.to_csv(DATA_PROCESSED_DIR / "phenology.csv", index=False)
+    chem.to_csv(DATA_PROCESSED_DIR / "chemistry.csv", index=False)
 
     p("=" * 78)
-    p("1. WEATHER WORKBOOK", DATA_DIR / METEO_XLSX)
+    p("1. WEATHER WORKBOOK", DATA_RAW_DIR / METEO_XLSX)
     p("=" * 78)
     p("Sheet-level layout check (extra rows / duplicated blocks):")
-    check_extra_rows_after_precip(DATA_DIR / METEO_XLSX)
+    check_extra_rows_after_precip(DATA_RAW_DIR / METEO_XLSX)
 
     yearly = daily.groupby("year").agg(
         days=("date", "size"),

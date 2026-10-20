@@ -21,7 +21,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-DATA_DIR = Path(os.environ.get("DATA_DIR", "."))
+DATA_RAW_DIR = Path(os.environ.get("DATA_DIR", "data/raw"))
+DATA_PROCESSED_DIR = Path(os.environ.get("DATA_PROCESSED_DIR", "data/processed"))
 OUT_DIR = Path(os.environ.get("OUT_DIR", "outputs"))
 
 METEO_XLSX = "Date meteo_2010_2023.xlsx"
@@ -81,7 +82,7 @@ def load_weather(path=None):
 
     Returns (daily_df, monthly_df).
     """
-    path = Path(path) if path else DATA_DIR / METEO_XLSX
+    path = Path(path) if path else DATA_RAW_DIR / METEO_XLSX
     xl = pd.ExcelFile(path)
     daily_rows, monthly_rows = [], []
 
@@ -145,7 +146,7 @@ def load_weather(path=None):
 
 def load_phenology(path=None) -> pd.DataFrame:
     """Phenology DOYs per variety and season (Site 1 = SCDVV Blaj)."""
-    path = Path(path) if path else DATA_DIR / PHENO_XLSX
+    path = Path(path) if path else DATA_RAW_DIR / PHENO_XLSX
     df = pd.read_excel(path, sheet_name=0).iloc[:, :7]
     df.columns = ["site", "prov", "year", "bb", "fl", "ve", "hv"]
     df = df.dropna(subset=["year"]).copy()
@@ -158,7 +159,7 @@ def load_phenology(path=None) -> pd.DataFrame:
 
 def load_chemistry(path=None) -> pd.DataFrame:
     """Sugar (g/L) and titratable acidity (g/L tartaric) at the analysis date."""
-    path = Path(path) if path else DATA_DIR / CHEM_XLSX
+    path = Path(path) if path else DATA_RAW_DIR / CHEM_XLSX
     c = pd.read_excel(path, sheet_name=0).iloc[:, :6]
     c.columns = ["variety_raw", "year", "sample_date_raw", "sample_doy", "sugar_gL", "acid_gL"]
     c["variety_raw"] = c["variety_raw"].ffill()
