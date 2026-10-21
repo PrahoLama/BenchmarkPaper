@@ -21,7 +21,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-DATA_DIR = Path(os.environ.get("DATA_DIR", "."))
+DATA_DIR = Path(os.environ.get("DATA_DIR", "data"))
 OUT_DIR = Path(os.environ.get("OUT_DIR", "outputs"))
 
 METEO_XLSX = "Date meteo_2010_2023.xlsx"

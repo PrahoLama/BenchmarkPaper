@@ -50,7 +50,7 @@ bud-break,31-Mar,Blasius,2021,ridge_weather,108.44911030359424,122.0,
 bud-break,31-Mar,Blasius,2022,naive_mean,109.25,122.0,
 bud-break,31-Mar,Blasius,2022,gdd_forecast,109.0,122.0,
 bud-break,31-Mar,Blasius,2022,gdd_retro,119.0,122.0,
-bud-break,31-Mar,Blasius,2022,ridge_weather,113.05284128969119,122.0,
+bud-break,31-Mar,Blasius,2022,ridge_weather,113.05284128969117,122.0,
 bud-break,31-Mar,Feteasca Alba,2010,naive_mean,108.08333333333333,105.0,
 bud-break,31-Mar,Feteasca Alba,2010,gdd_forecast,108.0,105.0,
 bud-break,31-Mar,Feteasca Alba,2010,gdd_retro,115.0,105.0,
@@ -98,7 +98,7 @@ bud-break,31-Mar,Feteasca Alba,2020,ridge_weather,110.22321041153256,105.0,
 bud-break,31-Mar,Feteasca Alba,2021,naive_mean,106.66666666666667,122.0,
 bud-break,31-Mar,Feteasca Alba,2021,gdd_forecast,107.0,122.0,
 bud-break,31-Mar,Feteasca Alba,2021,gdd_retro,126.0,122.0,
-bud-break,31-Mar,Feteasca Alba,2021,ridge_weather,106.16239323058981,122.0,
+bud-break,31-Mar,Feteasca Alba,2021,ridge_weather,106.16239323058983,122.0,
 bud-break,31-Mar,Feteasca Alba,2022,naive_mean,106.66666666666667,122.0,
 bud-break,31-Mar,Feteasca Alba,2022,gdd_forecast,106.0,122.0,
 bud-break,31-Mar,Feteasca Alba,2022,gdd_retro,116.0,122.0,
@@ -277,7 +277,7 @@ harvest,bb,Blasius,2012,naive_mean,263.3333333333333,254.0,110.0
 harvest,bb,Blasius,2012,ridge_doy,263.1779087940826,254.0,110.0
 harvest,bb,Blasius,2012,ridge_corr_sel,263.1779087940826,254.0,110.0
 harvest,bb,Blasius,2012,mlp_corr_sel_e100,262.0772210266924,254.0,110.0
-harvest,bb,Blasius,2012,mlp_corr_sel_e1000,254.99849834448978,254.0,110.0
+harvest,bb,Blasius,2012,mlp_corr_sel_e1000,254.99849834449833,254.0,110.0
 harvest,bb,Blasius,2012,gdd_forecast,262.0,254.0,110.0
 harvest,bb,Blasius,2012,gdd_retro,238.0,254.0,110.0
 harvest,bb,Blasius,2013,naive_mean,262.25,267.0,113.0
@@ -291,7 +291,7 @@ harvest,bb,Blasius,2014,naive_mean,261.75,273.0,108.0
 harvest,bb,Blasius,2014,ridge_doy,260.0793097772413,273.0,108.0
 harvest,bb,Blasius,2014,ridge_corr_sel,260.0793097772413,273.0,108.0
 harvest,bb,Blasius,2014,mlp_corr_sel_e100,259.66144503777866,273.0,108.0
-harvest,bb,Blasius,2014,mlp_corr_sel_e1000,260.489511809272,273.0,108.0
+harvest,bb,Blasius,2014,mlp_corr_sel_e1000,260.49765866928755,273.0,108.0
 harvest,bb,Blasius,2014,gdd_forecast,260.0,273.0,108.0
 harvest,bb,Blasius,2014,gdd_retro,259.0,273.0,108.0
 harvest,bb,Blasius,2015,naive_mean,263.0,258.0,108.0
@@ -312,14 +312,14 @@ harvest,bb,Blasius,2017,naive_mean,262.75,261.0,108.0
 harvest,bb,Blasius,2017,ridge_doy,261.2375139126209,261.0,108.0
 harvest,bb,Blasius,2017,ridge_corr_sel,258.63103790743224,261.0,108.0
 harvest,bb,Blasius,2017,mlp_corr_sel_e100,258.9608174781928,261.0,108.0
-harvest,bb,Blasius,2017,mlp_corr_sel_e1000,253.498920722433,261.0,108.0
+harvest,bb,Blasius,2017,mlp_corr_sel_e1000,253.49892072243307,261.0,108.0
 harvest,bb,Blasius,2017,gdd_forecast,260.0,261.0,108.0
 harvest,bb,Blasius,2017,gdd_retro,267.0,261.0,108.0
 harvest,bb,Blasius,2018,naive_mean,263.0,258.0,102.0
 harvest,bb,Blasius,2018,ridge_doy,257.20566722448905,258.0,102.0
 harvest,bb,Blasius,2018,ridge_corr_sel,258.2243782512161,258.0,102.0
 harvest,bb,Blasius,2018,mlp_corr_sel_e100,259.7986861239616,258.0,102.0
-harvest,bb,Blasius,2018,mlp_corr_sel_e1000,267.41748953226033,258.0,102.0
+harvest,bb,Blasius,2018,mlp_corr_sel_e1000,267.4174895322605,258.0,102.0
 harvest,bb,Blasius,2018,gdd_forecast,259.0,258.0,102.0
 harvest,bb,Blasius,2018,gdd_retro,241.0,258.0,102.0
 harvest,bb,Blasius,2019,naive_mean,263.4166666666667,253.0,106.0
@@ -340,14 +340,14 @@ harvest,bb,Blasius,2021,naive_mean,261.8333333333333,272.0,122.0
 harvest,bb,Blasius,2021,ridge_doy,269.0262596123523,272.0,122.0
 harvest,bb,Blasius,2021,ridge_corr_sel,271.2833228490832,272.0,122.0
 harvest,bb,Blasius,2021,mlp_corr_sel_e100,271.52666441457205,272.0,122.0
-harvest,bb,Blasius,2021,mlp_corr_sel_e1000,271.40588124519246,272.0,122.0
+harvest,bb,Blasius,2021,mlp_corr_sel_e1000,271.4058812451925,272.0,122.0
 harvest,bb,Blasius,2021,gdd_forecast,271.0,272.0,122.0
 harvest,bb,Blasius,2021,gdd_retro,366.0,272.0,122.0
 harvest,bb,Blasius,2022,naive_mean,261.8333333333333,272.0,122.0
 harvest,bb,Blasius,2022,ridge_doy,269.0262596123523,272.0,122.0
 harvest,bb,Blasius,2022,ridge_corr_sel,271.8663678836954,272.0,122.0
 harvest,bb,Blasius,2022,mlp_corr_sel_e100,272.0135925586795,272.0,122.0
-harvest,bb,Blasius,2022,mlp_corr_sel_e1000,273.5909236798582,272.0,122.0
+harvest,bb,Blasius,2022,mlp_corr_sel_e1000,273.59092367985807,272.0,122.0
 harvest,bb,Blasius,2022,gdd_forecast,271.0,272.0,122.0
 harvest,bb,Blasius,2022,gdd_retro,268.0,272.0,122.0
 harvest,bb,Feteasca Alba,2010,naive_mean,261.1666666666667,254.0,105.0
@@ -396,7 +396,7 @@ harvest,bb,Feteasca Alba,2016,naive_mean,260.8333333333333,258.0,104.0
 harvest,bb,Feteasca Alba,2016,ridge_doy,257.3354017210382,258.0,104.0
 harvest,bb,Feteasca Alba,2016,ridge_corr_sel,257.3354017210382,258.0,104.0
 harvest,bb,Feteasca Alba,2016,mlp_corr_sel_e100,256.34609874011426,258.0,104.0
-harvest,bb,Feteasca Alba,2016,mlp_corr_sel_e1000,255.07032201183534,258.0,104.0
+harvest,bb,Feteasca Alba,2016,mlp_corr_sel_e1000,255.0703220118353,258.0,104.0
 harvest,bb,Feteasca Alba,2016,gdd_forecast,259.0,258.0,104.0
 harvest,bb,Feteasca Alba,2016,gdd_retro,260.0,258.0,104.0
 harvest,bb,Feteasca Alba,2017,naive_mean,261.0,256.0,106.0
@@ -409,7 +409,7 @@ harvest,bb,Feteasca Alba,2017,gdd_retro,264.0,256.0,106.0
 harvest,bb,Feteasca Alba,2018,naive_mean,260.8333333333333,258.0,102.0
 harvest,bb,Feteasca Alba,2018,ridge_doy,255.34892584892583,258.0,102.0
 harvest,bb,Feteasca Alba,2018,ridge_corr_sel,255.34892584892583,258.0,102.0
-harvest,bb,Feteasca Alba,2018,mlp_corr_sel_e100,253.84373477305857,258.0,102.0
+harvest,bb,Feteasca Alba,2018,mlp_corr_sel_e100,253.84373477305854,258.0,102.0
 harvest,bb,Feteasca Alba,2018,mlp_corr_sel_e1000,251.26166197402782,258.0,102.0
 harvest,bb,Feteasca Alba,2018,gdd_forecast,258.0,258.0,102.0
 harvest,bb,Feteasca Alba,2018,gdd_retro,240.0,258.0,102.0
@@ -501,7 +501,7 @@ harvest,bb,Radames,2018,naive_mean,265.25,261.0,106.0
 harvest,bb,Radames,2018,ridge_doy,262.30308803180606,261.0,106.0
 harvest,bb,Radames,2018,ridge_corr_sel,264.2711123741818,261.0,106.0
 harvest,bb,Radames,2018,mlp_corr_sel_e100,263.31155223367455,261.0,106.0
-harvest,bb,Radames,2018,mlp_corr_sel_e1000,256.67880754554545,261.0,106.0
+harvest,bb,Radames,2018,mlp_corr_sel_e1000,256.6788075455455,261.0,106.0
 harvest,bb,Radames,2018,gdd_forecast,262.0,261.0,106.0
 harvest,bb,Radames,2018,gdd_retro,245.0,261.0,106.0
 harvest,bb,Radames,2019,naive_mean,265.75,255.0,104.0
@@ -529,21 +529,21 @@ harvest,bb,Radames,2022,naive_mean,264.4166666666667,271.0,117.0
 harvest,bb,Radames,2022,ridge_doy,269.3332246849196,271.0,117.0
 harvest,bb,Radames,2022,ridge_corr_sel,269.44264997130585,271.0,117.0
 harvest,bb,Radames,2022,mlp_corr_sel_e100,270.5711489773628,271.0,117.0
-harvest,bb,Radames,2022,mlp_corr_sel_e1000,268.66581187894883,271.0,117.0
+harvest,bb,Radames,2022,mlp_corr_sel_e1000,268.6658118789489,271.0,117.0
 harvest,bb,Radames,2022,gdd_forecast,270.0,271.0,117.0
 harvest,bb,Radames,2022,gdd_retro,268.0,271.0,117.0
 harvest,bb,Sauvignon Blanc,2010,naive_mean,265.5,259.0,112.0
-harvest,bb,Sauvignon Blanc,2010,ridge_doy,265.6276595744681,259.0,112.0
-harvest,bb,Sauvignon Blanc,2010,ridge_corr_sel,265.6276595744681,259.0,112.0
+harvest,bb,Sauvignon Blanc,2010,ridge_doy,265.62765957446805,259.0,112.0
+harvest,bb,Sauvignon Blanc,2010,ridge_corr_sel,265.62765957446805,259.0,112.0
 harvest,bb,Sauvignon Blanc,2010,mlp_corr_sel_e100,265.5720252806814,259.0,112.0
-harvest,bb,Sauvignon Blanc,2010,mlp_corr_sel_e1000,259.5698790760484,259.0,112.0
+harvest,bb,Sauvignon Blanc,2010,mlp_corr_sel_e1000,259.5698790760483,259.0,112.0
 harvest,bb,Sauvignon Blanc,2010,gdd_forecast,265.0,259.0,112.0
 harvest,bb,Sauvignon Blanc,2010,gdd_retro,366.0,259.0,112.0
 harvest,bb,Sauvignon Blanc,2011,naive_mean,265.5,259.0,112.0
-harvest,bb,Sauvignon Blanc,2011,ridge_doy,265.6276595744681,259.0,112.0
-harvest,bb,Sauvignon Blanc,2011,ridge_corr_sel,265.6276595744681,259.0,112.0
+harvest,bb,Sauvignon Blanc,2011,ridge_doy,265.62765957446805,259.0,112.0
+harvest,bb,Sauvignon Blanc,2011,ridge_corr_sel,265.62765957446805,259.0,112.0
 harvest,bb,Sauvignon Blanc,2011,mlp_corr_sel_e100,265.5720252806814,259.0,112.0
-harvest,bb,Sauvignon Blanc,2011,mlp_corr_sel_e1000,259.5698790760484,259.0,112.0
+harvest,bb,Sauvignon Blanc,2011,mlp_corr_sel_e1000,259.5698790760483,259.0,112.0
 harvest,bb,Sauvignon Blanc,2011,gdd_forecast,265.0,259.0,112.0
 harvest,bb,Sauvignon Blanc,2011,gdd_retro,366.0,259.0,112.0
 harvest,bb,Sauvignon Blanc,2012,naive_mean,265.5,259.0,110.0
@@ -557,7 +557,7 @@ harvest,bb,Sauvignon Blanc,2013,naive_mean,264.5,271.0,113.0
 harvest,bb,Sauvignon Blanc,2013,ridge_doy,265.0052808673708,271.0,113.0
 harvest,bb,Sauvignon Blanc,2013,ridge_corr_sel,265.0052808673708,271.0,113.0
 harvest,bb,Sauvignon Blanc,2013,mlp_corr_sel_e100,262.8922558201733,271.0,113.0
-harvest,bb,Sauvignon Blanc,2013,mlp_corr_sel_e1000,256.7177771093853,271.0,113.0
+harvest,bb,Sauvignon Blanc,2013,mlp_corr_sel_e1000,256.7177771093852,271.0,113.0
 harvest,bb,Sauvignon Blanc,2013,gdd_forecast,264.0,271.0,113.0
 harvest,bb,Sauvignon Blanc,2013,gdd_retro,249.0,271.0,113.0
 harvest,bb,Sauvignon Blanc,2014,naive_mean,264.3333333333333,273.0,109.0
@@ -620,7 +620,7 @@ harvest,bb,Sauvignon Blanc,2022,naive_mean,265.0,265.0,122.0
 harvest,bb,Sauvignon Blanc,2022,ridge_doy,271.32823490007814,265.0,122.0
 harvest,bb,Sauvignon Blanc,2022,ridge_corr_sel,271.32823490007814,265.0,122.0
 harvest,bb,Sauvignon Blanc,2022,mlp_corr_sel_e100,271.67957506421584,265.0,122.0
-harvest,bb,Sauvignon Blanc,2022,mlp_corr_sel_e1000,273.39737667124837,265.0,122.0
+harvest,bb,Sauvignon Blanc,2022,mlp_corr_sel_e1000,273.3973766712483,265.0,122.0
 harvest,bb,Sauvignon Blanc,2022,gdd_forecast,275.0,265.0,122.0
 harvest,bb,Sauvignon Blanc,2022,gdd_retro,271.0,265.0,122.0
 harvest,bb,Selena,2010,naive_mean,261.4166666666667,254.0,106.0
@@ -773,7 +773,7 @@ harvest,fl,Blasius,2017,gdd_retro,260.0,261.0,157.0
 harvest,fl,Blasius,2018,naive_mean,263.0,258.0,152.0
 harvest,fl,Blasius,2018,ridge_doy,256.15323295934076,258.0,152.0
 harvest,fl,Blasius,2018,ridge_corr_sel,262.7873984682236,258.0,152.0
-harvest,fl,Blasius,2018,mlp_corr_sel_e100,272.4502166786568,258.0,152.0
+harvest,fl,Blasius,2018,mlp_corr_sel_e100,272.4502166786567,258.0,152.0
 harvest,fl,Blasius,2018,mlp_corr_sel_e1000,275.550619497987,258.0,152.0
 harvest,fl,Blasius,2018,gdd_forecast,255.0,258.0,152.0
 harvest,fl,Blasius,2018,gdd_retro,256.0,258.0,152.0
@@ -886,7 +886,7 @@ harvest,fl,Feteasca Alba,2021,naive_mean,259.5,274.0,169.0
 harvest,fl,Feteasca Alba,2021,ridge_doy,275.4954951133705,274.0,169.0
 harvest,fl,Feteasca Alba,2021,ridge_corr_sel,273.8856187355187,274.0,169.0
 harvest,fl,Feteasca Alba,2021,mlp_corr_sel_e100,274.35554514215124,274.0,169.0
-harvest,fl,Feteasca Alba,2021,mlp_corr_sel_e1000,279.1281093481092,274.0,169.0
+harvest,fl,Feteasca Alba,2021,mlp_corr_sel_e1000,279.12810934810926,274.0,169.0
 harvest,fl,Feteasca Alba,2021,gdd_forecast,284.0,274.0,169.0
 harvest,fl,Feteasca Alba,2021,gdd_retro,359.0,274.0,169.0
 harvest,fl,Feteasca Alba,2022,naive_mean,259.6666666666667,272.0,163.0
@@ -1045,7 +1045,7 @@ harvest,fl,Sauvignon Blanc,2017,gdd_forecast,262.0,268.0,159.0
 harvest,fl,Sauvignon Blanc,2017,gdd_retro,263.0,268.0,159.0
 harvest,fl,Sauvignon Blanc,2018,naive_mean,265.3333333333333,261.0,156.0
 harvest,fl,Sauvignon Blanc,2018,ridge_doy,263.0949636567945,261.0,156.0
-harvest,fl,Sauvignon Blanc,2018,ridge_corr_sel,266.3809789980178,261.0,156.0
+harvest,fl,Sauvignon Blanc,2018,ridge_corr_sel,266.38097899801784,261.0,156.0
 harvest,fl,Sauvignon Blanc,2018,mlp_corr_sel_e100,271.3955418967883,261.0,156.0
 harvest,fl,Sauvignon Blanc,2018,mlp_corr_sel_e1000,269.99026508238956,261.0,156.0
 harvest,fl,Sauvignon Blanc,2018,gdd_forecast,258.0,261.0,156.0
@@ -1117,7 +1117,7 @@ harvest,fl,Selena,2015,naive_mean,261.25,256.0,156.0
 harvest,fl,Selena,2015,ridge_doy,260.3652977758027,256.0,156.0
 harvest,fl,Selena,2015,ridge_corr_sel,260.3833310019648,256.0,156.0
 harvest,fl,Selena,2015,mlp_corr_sel_e100,261.66784129403857,256.0,156.0
-harvest,fl,Selena,2015,mlp_corr_sel_e1000,263.2249646242478,256.0,156.0
+harvest,fl,Selena,2015,mlp_corr_sel_e1000,263.2249646242477,256.0,156.0
 harvest,fl,Selena,2015,gdd_forecast,259.0,256.0,156.0
 harvest,fl,Selena,2015,gdd_retro,251.0,256.0,156.0
 harvest,fl,Selena,2016,naive_mean,261.0833333333333,258.0,158.0
@@ -1228,7 +1228,7 @@ harvest,ve,Blasius,2017,gdd_retro,271.0,261.0,230.0
 harvest,ve,Blasius,2018,naive_mean,263.0,258.0,230.0
 harvest,ve,Blasius,2018,ridge_doy,258.3368271231218,258.0,230.0
 harvest,ve,Blasius,2018,ridge_corr_sel,271.43336117719025,258.0,230.0
-harvest,ve,Blasius,2018,mlp_corr_sel_e100,266.2323557557894,258.0,230.0
+harvest,ve,Blasius,2018,mlp_corr_sel_e100,266.23235575578934,258.0,230.0
 harvest,ve,Blasius,2018,mlp_corr_sel_e1000,264.6497898248495,258.0,230.0
 harvest,ve,Blasius,2018,gdd_forecast,264.0,258.0,230.0
 harvest,ve,Blasius,2018,gdd_retro,258.0,258.0,230.0
@@ -1313,7 +1313,7 @@ harvest,ve,Feteasca Alba,2017,naive_mean,261.0,256.0,227.0
 harvest,ve,Feteasca Alba,2017,ridge_doy,259.33235740268975,256.0,227.0
 harvest,ve,Feteasca Alba,2017,ridge_corr_sel,260.25914217552395,256.0,227.0
 harvest,ve,Feteasca Alba,2017,mlp_corr_sel_e100,258.61526951840665,256.0,227.0
-harvest,ve,Feteasca Alba,2017,mlp_corr_sel_e1000,257.0689318754083,256.0,227.0
+harvest,ve,Feteasca Alba,2017,mlp_corr_sel_e1000,257.0689318754082,256.0,227.0
 harvest,ve,Feteasca Alba,2017,gdd_forecast,262.0,256.0,227.0
 harvest,ve,Feteasca Alba,2017,gdd_retro,267.0,256.0,227.0
 harvest,ve,Feteasca Alba,2018,naive_mean,260.8333333333333,258.0,230.0
@@ -1409,7 +1409,7 @@ harvest,ve,Radames,2017,gdd_forecast,273.0,263.0,233.0
 harvest,ve,Radames,2017,gdd_retro,291.0,263.0,233.0
 harvest,ve,Radames,2018,naive_mean,265.25,261.0,234.0
 harvest,ve,Radames,2018,ridge_doy,264.2790309955301,261.0,234.0
-harvest,ve,Radames,2018,ridge_corr_sel,274.88773067467736,261.0,234.0
+harvest,ve,Radames,2018,ridge_corr_sel,274.8877306746774,261.0,234.0
 harvest,ve,Radames,2018,mlp_corr_sel_e100,273.82243343087873,261.0,234.0
 harvest,ve,Radames,2018,mlp_corr_sel_e1000,275.00269989519063,261.0,234.0
 harvest,ve,Radames,2018,gdd_forecast,276.0,261.0,234.0
@@ -1444,7 +1444,7 @@ harvest,ve,Radames,2022,gdd_forecast,255.0,271.0,224.0
 harvest,ve,Radames,2022,gdd_retro,258.0,271.0,224.0
 harvest,ve,Sauvignon Blanc,2010,naive_mean,265.5,259.0,224.0
 harvest,ve,Sauvignon Blanc,2010,ridge_doy,262.704122796369,259.0,224.0
-harvest,ve,Sauvignon Blanc,2010,ridge_corr_sel,265.057173242087,259.0,224.0
+harvest,ve,Sauvignon Blanc,2010,ridge_corr_sel,265.05717324208695,259.0,224.0
 harvest,ve,Sauvignon Blanc,2010,mlp_corr_sel_e100,263.5348889991816,259.0,224.0
 harvest,ve,Sauvignon Blanc,2010,mlp_corr_sel_e1000,261.77267009146783,259.0,224.0
 harvest,ve,Sauvignon Blanc,2010,gdd_forecast,255.0,259.0,224.0
@@ -1578,7 +1578,7 @@ harvest,ve,Selena,2015,gdd_retro,260.0,256.0,228.0
 harvest,ve,Selena,2016,naive_mean,261.0833333333333,258.0,227.0
 harvest,ve,Selena,2016,ridge_doy,260.17524413376566,258.0,227.0
 harvest,ve,Selena,2016,ridge_corr_sel,259.84955068816106,258.0,227.0
-harvest,ve,Selena,2016,mlp_corr_sel_e100,264.2095781432933,258.0,227.0
+harvest,ve,Selena,2016,mlp_corr_sel_e100,264.20957814329324,258.0,227.0
 harvest,ve,Selena,2016,mlp_corr_sel_e1000,264.1056358843505,258.0,227.0
 harvest,ve,Selena,2016,gdd_forecast,260.0,258.0,227.0
 harvest,ve,Selena,2016,gdd_retro,260.0,258.0,227.0

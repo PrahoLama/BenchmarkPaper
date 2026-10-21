@@ -22,7 +22,7 @@ Models
                       never reached in that season, see n_capped_366)
   ridge_weather       bud-break only: ridge on weather accumulated to 31 March
 
-Outputs: outputs/tables/loyo_predictions.csv and outputs/tables/benchmark_summary.csv
+Outputs: outputs/tables/loyo_predictions.csv and outputs/tables/benchmark.csv
 """
 import warnings
 
@@ -34,8 +34,8 @@ from sklearn.linear_model import Ridge
 from sklearn.neural_network import MLPRegressor
 from sklearn.preprocessing import StandardScaler
 
-from common import (GDD_MAX_DOY, PHASES, bb_features, cutoff_features, load_phenology,
-                    load_weather, out_path, weather_by_year, window)
+from .common import (GDD_MAX_DOY, PHASES, bb_features, cutoff_features, load_phenology,
+                     load_weather, out_path, weather_by_year, window)
 
 RNG = np.random.default_rng(42)
 N_BOOT = 2000
@@ -291,7 +291,7 @@ def main():
     preds = pd.DataFrame(recs)
     preds.to_csv(out_path("tables", "loyo_predictions.csv"), index=False)
     summary = summarise(preds)
-    summary.to_csv(out_path("tables", "benchmark_summary.csv"), index=False)
+    summary.to_csv(out_path("tables", "benchmark.csv"), index=False)
 
     print("GDD start (bud-break models) selected per held-out year:", BB_START_LOG)
     show = summary[summary["variety"] == "ALL"][["target", "cutoff", "model", "n", "MAE",

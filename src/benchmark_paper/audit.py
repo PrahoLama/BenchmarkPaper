@@ -3,15 +3,15 @@
 
 Writes:
   outputs/clean/*.csv            cleaned tables used by 02_benchmark.py
-  outputs/audit/data_audit.txt   data facts to put in Chapters 3-4 of the paper
+  outputs/audit/audit.txt        data facts to put in Chapters 3-4 of the paper
 
 Checks the paper's numbers (Table I, annual means of Table 3.1) against the raw files.
 """
 import numpy as np
 import pandas as pd
 
-from common import (DATA_DIR, METEO_XLSX, PHASES, PHASE_LABELS, load_chemistry,
-                    load_phenology, load_weather, out_path)
+from .common import (DATA_DIR, METEO_XLSX, PHASES, PHASE_LABELS, load_chemistry,
+                     load_phenology, load_weather, out_path)
 
 # Table I of the submitted paper: mean, sd (days), n seasons
 PAPER_TABLE_I = {
@@ -71,9 +71,9 @@ def main():
     pheno = load_phenology()
     chem = load_chemistry()
 
-    daily.to_csv(out_path("clean", "daily_weather.csv"), index=False)
-    monthly.to_csv(out_path("clean", "monthly_precip.csv"), index=False)
-    pheno.to_csv(out_path("clean", "phenology.csv"), index=False)
+    daily.to_csv(out_path("clean", "common.csv"), index=False)
+    monthly.to_csv(out_path("clean", "precip.csv"), index=False)
+    pheno.to_csv(out_path("clean", "pheno.csv"), index=False)
     chem.to_csv(out_path("clean", "chemistry.csv"), index=False)
 
     p("=" * 78)
@@ -155,8 +155,8 @@ def main():
     p("  - Yield data are not in the uploaded files; the benchmark covers phenology only.")
 
     out_path("audit").mkdir(parents=True, exist_ok=True)
-    (out_path("audit") / "data_audit.txt").write_text("\n".join(log_lines), encoding="utf-8")
-    p(f"\nWritten: {out_path('audit') / 'data_audit.txt'}")
+    (out_path("audit") / "audit.txt").write_text("\n".join(log_lines), encoding="utf-8")
+    p(f"\nWritten: {out_path('audit') / 'audit.txt'}")
 
 
 if __name__ == "__main__":
